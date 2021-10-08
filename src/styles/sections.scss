@@ -1,0 +1,173 @@
+.Main_Banner{
+    position: relative;
+    min-height: 80vh;
+    figure{
+        width: 100%;
+        height: 100%;
+        img{
+            height: 80vh;
+            width: 100%;
+            @include object-fit(cover);
+        }
+    }
+    article{
+        position: absolute;
+        @include center;
+        h1{
+            text-transform: uppercase;
+        }
+    }
+}
+.What_We_Offer{
+    position: relative;
+    padding: 60px 0;
+    background-color: $base-white-color;
+    .wrapper{
+        position: relative;
+        @include flex;
+        li a{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            figure{
+                background-color:$secondary-color;
+                padding: 30px;
+                width: max-content;
+                height: 100%;
+                border-radius: 100px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                @include trans;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    @include object-fit(contain);
+                }
+            }
+            h6{
+                text-transform: uppercase;
+            }
+            &:hover{
+                figure{
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+    @media(max-width: 1080px){
+        .wrapper{
+            display: block;
+        }
+    }
+}
+.Counter{
+    position: relative;
+    padding: 60px 0;
+    background-color: $secondary-color;
+}
+.Services{
+    position: relative;
+    padding: 60px 0;
+    background-color: $base-white-color;
+    .services-wrapper{
+        position: relative;
+        display: inline-block;
+        li{
+            width: calc(100%/3 - 20px);
+            margin-bottom: 20px;
+            float: left;
+            header{
+                position: relative;
+                h6{
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    @media(max-width: 1080px){
+        .services-wrapper{
+            li{
+                width: calc(100%/2 - 20px);
+            }
+        }
+    }
+    @media(max-width: 1080px){
+        .services-wrapper{
+            li{
+                width: 100%;
+            }
+        }
+    }
+}
+.Our_Team{
+    position: relative;
+    padding: 60px 0 130px 0;
+    background-color: $secondary-color;
+    .wrapper{
+        @include flex;
+        margin-bottom: 50px;
+        .item{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin-right: 20px;
+            a{
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                figure{
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        @include object-fit(cover);
+                    }
+                }
+                .name-wrapper{
+                    position: absolute;
+                    bottom: -20px;
+                    text-align: center;
+                    width: 100%;
+                    .name{
+                        background-color: $primary-color;
+                        text-transform: uppercase;
+                        color: $base-white-color;
+                        width: 50%;
+                        margin: 0 auto;
+                        padding: 10px;
+                        font-size: 13px;
+                        font-weight: 600;
+                        border-radius: 4px;
+                    }
+                }
+            }
+            article{
+                display: inline-block;
+                width: 100%;
+                padding: 40px 0 0 0;
+                border: 1px solid $base-white-color;
+                .position{
+                    color: $font-color;
+                }
+            }
+        }
+    }
+}
+.Contact_Us{
+    position: relative;
+    padding: 60px 0;
+    background-color: $base-white-color;
+}
+.Testimonials{
+    position: relative;
+    padding: 60px 0;
+    background-color: $primary-color;
+}
+.Clients{
+    position: relative;
+    min-height: 200px;
+    background-color: $secondary-color;
+}

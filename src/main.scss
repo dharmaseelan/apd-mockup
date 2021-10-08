@@ -1,0 +1,57 @@
+@import './styles/variables.scss';
+@import './styles/header.scss';
+@import './styles/sections.scss';
+@import './styles/footer.scss';
+
+body {
+  margin: 0;
+  font-family: $font-family !important;
+  a{
+    color: $font-color;
+    text-decoration: none;
+    @include trans;
+    &:hover{
+      color: $primary-color;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    font-weight: 700;
+  }
+}
+ul{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+.heading{
+  position: relative;
+  &.center{
+    text-align: center;
+  }
+  h3{
+    text-transform: uppercase;
+    span{
+      color: $primary-color;
+    }
+  }
+}
+
+.btn_primary{ 
+  @include primary-btn;
+  &.w-100{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.dark{
+  h1,h2,h3,h4,h5,h6,p{
+    color: $base-white-color;
+  }
+}

@@ -1,0 +1,19 @@
+header{
+    position: absolute;
+    padding: 20px 0;
+    width: 100%;
+    z-index: 2;
+    background-color: transparent;
+    .navigation{
+        .item{
+            margin-left:10px;
+            a{
+                padding: 10px;
+                &:hover{
+                    background-color: $primary-color;
+                    color: $base-white-color;
+                }
+            }
+        }
+    }
+}
