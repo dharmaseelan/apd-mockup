@@ -1,5 +1,8 @@
 import React from 'react'
 import user_img from './../assets/images/user_placeholder.jpeg';
+import Social_Icons from './Social_Icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 
 function Team() {
     return (
@@ -14,11 +17,12 @@ function Team() {
                             <div className="name-wrapper">
                                 <div className="name">Alex Simpson</div>
                             </div>
+                            <Social_Icons />
                         </a>
                         <article>
                             <p className="position">CEO & Developer</p>
-                            <p className="email"><a href="/"><i class="fas fa-envelope"></i> a.simpson@unique.com</a></p>
-                            <p className="phone"><a href="/">+1 911 (77) 22-1111</a></p>
+                            <p className="email"><a href="/"><FontAwesomeIcon icon={faEnvelope} /> a.simpson@unique.com</a></p>
+                            <p className="phone"><a href="/"><FontAwesomeIcon icon={faPhoneAlt} /> +1 911 (77) 22-1111</a></p>
                         </article>    
                     </li> 
                     <li className="item">
@@ -31,9 +35,9 @@ function Team() {
                             </div>
                         </a>
                         <article>
-                            <p className="position">CEO & Developer</p>
-                            <p className="email"><a href="/">a.simpson@unique.com</a></p>
-                            <p className="phone"><a href="/">+1 911 (77) 22-1111</a></p>
+                            <p className="position">User interface Designer</p>
+                            <p className="email"><a href="/"><FontAwesomeIcon icon={faEnvelope} /> a.cole@unique.com</a></p>
+                            <p className="phone"><a href="/"><FontAwesomeIcon icon={faPhoneAlt} /> +1 911 (77) 22-1111</a></p>
                         </article>
                     </li>
                     <li className="item">
@@ -46,9 +50,9 @@ function Team() {
                             </div>
                         </a>
                         <article>
-                            <p className="position">CEO & Developer</p>
-                            <p className="email"><a href="/">a.simpson@unique.com</a></p>
-                            <p className="phone"><a href="/">+1 911 (77) 22-1111</a></p>
+                            <p className="position">Sales Manager</p>
+                            <p className="email"><a href="/"><FontAwesomeIcon icon={faEnvelope} /> f.piener@unique.com</a></p>
+                            <p className="phone"><a href="/"><FontAwesomeIcon icon={faPhoneAlt} /> +1 911 (77) 22-1111</a></p>
                         </article>
                     </li>
                     <li className="item m-0">
@@ -59,11 +63,12 @@ function Team() {
                             <div className="name-wrapper">
                                 <div className="name">Ashley Lennon</div>
                             </div>
+                            <Social_Icons />
                         </a>
                         <article>
-                            <p className="position">CEO & Developer</p>
-                            <p className="email"><a href="/">a.simpson@unique.com</a></p>
-                            <p className="phone"><a href="/">+1 911 (77) 22-1111</a></p>
+                            <p className="position">IT Specialist</p>
+                            <p className="email"><a href="/"><FontAwesomeIcon icon={faEnvelope} /> a.lennon@unique.com</a></p>
+                            <p className="phone"><a href="/"><FontAwesomeIcon icon={faPhoneAlt} /> +1 911 (77) 22-1111</a></p>
                         </article>
                     </li>
                 </ul> 
