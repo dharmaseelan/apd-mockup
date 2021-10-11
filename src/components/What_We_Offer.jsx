@@ -11,8 +11,8 @@ function What_We_Offer() {
                     <h3>What we <span>offer</span></h3>
                     <p>We offer our customers the best services & solutions, this is our main serives list</p>
                 </div>
-                <ul className="wrapper p-0 m-0">
-                    <li>
+                <div className="row wrapper p-0">
+                    <div className="col-lg-4 text-center">
                         <a href="/">
                             <figure>
                                 <img src={computer_icon} alt="computer" />
@@ -21,10 +21,10 @@ function What_We_Offer() {
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             </p>
-                            <span className="btn-sm">Read more</span>
+                            <span className="btn-sm-outline">Read more</span>
                         </a>
-                    </li>
-                    <li>
+                    </div>
+                    <div className="col-lg-4 text-center">
                         <a href="/">
                             <figure>
                                 <img src={puzzle_icon} alt="puzzle" />
@@ -33,10 +33,10 @@ function What_We_Offer() {
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             </p>
-                            <span className="btn-sm">Read more</span>
+                            <span className="btn-sm-outline">Read more</span>
                         </a>
-                    </li>
-                    <li>
+                    </div>
+                    <div className="col-lg-4 text-center">
                         <a href="/">
                             <figure>
                                 <img src={circle_icon} alt="circle" />
@@ -45,10 +45,10 @@ function What_We_Offer() {
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             </p>
-                            <span className="btn-sm">Read more</span>
+                            <span className="btn-sm-outline">Read more</span>
                         </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
              </div>   
         </div>
     )

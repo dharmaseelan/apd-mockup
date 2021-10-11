@@ -42,6 +42,13 @@ ul{
   }
 }
 
+.dark{
+  h1,h2,h3,h4,h5,h6,p{
+    color: $base-white-color;
+  }
+}
+
+//Button
 .btn_primary{ 
   @include primary-btn;
   &.w-100{
@@ -49,9 +56,13 @@ ul{
     text-align: center;
   }
 }
+.btn-sm-outline{
+  @include primary-btn(sm_outline);
+}
 
-.dark{
-  h1,h2,h3,h4,h5,h6,p{
-    color: $base-white-color;
-  }
+// Social Icons
+.Social_Icons{
+  position:absolute;
+  @include center;
+  z-index: 2;
 }
